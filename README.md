@@ -34,5 +34,9 @@ Things you may want to cover:
   # add user model
 
   rails g model user name:string username:string email:string password_digest:string
+
+  # add user controller
+
+  rails g controller users
   
 ```
