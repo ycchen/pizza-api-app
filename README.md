@@ -30,4 +30,9 @@ Things you may want to cover:
 
   # add rspec
   rails g rspec:install
+
+  # add user model
+
+  rails g model user name:string username:string email:string password_digest:string
+  
 ```
