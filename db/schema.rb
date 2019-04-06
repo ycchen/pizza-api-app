@@ -10,7 +10,47 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_05_201001) do
+ActiveRecord::Schema.define(version: 2019_04_06_124752) do
+
+  create_table "orders", force: :cascade do |t|
+    t.integer "user_id"
+    t.decimal "total", precision: 5, scale: 2
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_orders_on_user_id"
+  end
+
+  create_table "pizza_orders", force: :cascade do |t|
+    t.integer "order_id"
+    t.integer "pizza_id"
+    t.integer "quantity"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["order_id"], name: "index_pizza_orders_on_order_id"
+    t.index ["pizza_id"], name: "index_pizza_orders_on_pizza_id"
+  end
+
+  create_table "pizza_toppings", force: :cascade do |t|
+    t.integer "topping_id"
+    t.integer "pizza_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["pizza_id"], name: "index_pizza_toppings_on_pizza_id"
+    t.index ["topping_id"], name: "index_pizza_toppings_on_topping_id"
+  end
+
+  create_table "pizzas", force: :cascade do |t|
+    t.string "name"
+    t.decimal "price", precision: 5, scale: 2
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "toppings", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "name"
