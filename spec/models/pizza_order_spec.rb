@@ -1,5 +1,13 @@
 require 'rails_helper'
 
 RSpec.describe PizzaOrder, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let(:pizza_order) { FactoryBot.build(:pizza_order) }
+  subject { pizza_order }
+
+  it { should respond_to(:order_id) }
+  it { should respond_to(:pizza_id) }
+  it { should respond_to(:quantity) }
+  it { should belong_to(:order) }
+  it { should belong_to(:pizza) }
+
 end

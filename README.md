@@ -25,6 +25,13 @@ Things you may want to cover:
 
 * Pizza api app
 
+-- Setup 
+```
+rails db:{drop,create,migrate,seed,test:prepare}
+```
+
+-- Notes
+
 ```ruby
   rails new pizza-api-app --api -T
 
@@ -77,7 +84,7 @@ curl -H "Authorization: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1NTQ2MDU
 
 ```ruby
 # Pizza model
-rails g model Pizza name:string price:decimal
+rails g model Pizza name:string 'price:decimal{5,2}'
 # has_many :toppings
 # has_many :pizza_orders
 # has_many :orders, throught: :pizza_orders
@@ -92,7 +99,7 @@ rails g model PizzaTopping topping:references pizza:references
 # belongs_to :topping
 
 # Order model
-rails g model Order user:references total:decimal
+rails g model Order user:references 'total:decimal{5,2}'
 # belongs_to :user
 # has_many :pizza_orders
 # has_many :pizzas through: :pizza_orders
@@ -137,4 +144,12 @@ rails g model PizzaOrder order:references pizza:references quantity:integer
   validates :quantity, presence: true
  end
 
+
+# generate controller
+
+rails g controller Pizzas
+
+rails g controller Toppings
+
+rails g controller Orders
 ```

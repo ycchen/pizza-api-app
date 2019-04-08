@@ -5,4 +5,8 @@ class User < ApplicationRecord
   validates :password,
             length: { minimum: 8 },
             if: -> { new_record? || !password.nil? }
+
+  has_many :orders, dependent: :destroy
+  has_many :pizzas, through: :orders
+
 end

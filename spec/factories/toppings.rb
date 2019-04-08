@@ -1,0 +1,5 @@
+FactoryBot.define do
+  factory :topping do
+    name { FFaker::Lorem.unique.word }
+  end
+end
