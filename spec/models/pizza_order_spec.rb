@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe PizzaOrder, type: :model do
@@ -9,5 +11,4 @@ RSpec.describe PizzaOrder, type: :model do
   it { should respond_to(:quantity) }
   it { should belong_to(:order) }
   it { should belong_to(:pizza) }
-
 end

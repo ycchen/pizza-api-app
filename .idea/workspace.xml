@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="514aec74-e1a8-45f4-9594-64d1da35fc65" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/serializers/order_serializer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/serializers/order_serializer.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/serializers/order_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/serializers/pizza_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/serializers/topping_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/serializers/user_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/controllers/orders_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/orders_controller_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/controllers/pizzas_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/pizzas_controller_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/controllers/toppings_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/toppings_controller_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/controllers/users_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/users_controller_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/order.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/order.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/support/request_helpers.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/support/request_helpers.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -26,28 +25,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/support/request_helpers.rb">
+        <entry file="file://$PROJECT_DIR$/spec/controllers/orders_controller_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="438">
+              <caret line="23" column="53" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/controllers/toppings_controller_spec.rb">
+        <entry file="file://$PROJECT_DIR$/spec/serializers/pizza_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            <state relative-caret-position="252">
+              <caret line="12" column="38" lean-forward="true" selection-end-line="15" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/serializers/topping_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spec/controllers/orders_controller_spec.rb">
+        <entry file="file://$PROJECT_DIR$/spec/serializers/order_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+            <state relative-caret-position="252">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/serializers/user_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -107,7 +124,11 @@
         <option value="$PROJECT_DIR$/spec/controllers/pizzas_controller_spec.rb" />
         <option value="$PROJECT_DIR$/spec/factories/order.rb" />
         <option value="$PROJECT_DIR$/app/serializers/order_serializer.rb" />
+        <option value="$PROJECT_DIR$/spec/serializers/pizza_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/serializers/user_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/serializers/topping_spec.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/orders_controller_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/serializers/order_spec.rb" />
       </list>
     </option>
   </component>
@@ -117,13 +138,6 @@
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/dataSources.xml" />
-      </list>
-    </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1280" />
@@ -146,25 +160,24 @@
             <path>
               <item name="pizza-api-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="pizza-api-app" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pizza-api-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pizza-api-app" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="serializers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pizza-api-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pizza-api-app" type="462c0819:PsiDirectoryNode" />
               <item name="spec" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pizza-api-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="pizza-api-app" type="462c0819:PsiDirectoryNode" />
               <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pizza-api-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pizza-api-app" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="factories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pizza-api-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pizza-api-app" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
+              <item name="serializers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -175,6 +188,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -192,8 +206,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="RSpec.OrdersController: pizza-api-app">
-    <configuration name="OrdersController GET #index returns user's orders: pizza-api-app" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+  <component name="RunManager" selected="RSpec.OrderSerializer is json: pizza-api-app">
+    <configuration name="OrderSerializer is json: pizza-api-app" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <module name="pizza-api-app" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -213,10 +227,44 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/controllers/orders_controller_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/serializers/order_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="'**/*_spec.rb'" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="OrdersController GET #index returns user's orders" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="OrderSerializer is json" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="--no-color" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="OrderSerializer: pizza-api-app" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <module name="pizza-api-app" />
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/serializers/order_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="'**/*_spec.rb'" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="OrderSerializer" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="--no-color" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -261,7 +309,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method v="2" />
     </configuration>
-    <configuration name="OrdersController Get #show: pizza-api-app" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration name="UserSerializer: pizza-api-app" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <module name="pizza-api-app" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -281,10 +329,10 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/controllers/orders_controller_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/serializers/topping_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="'**/*_spec.rb'" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="OrdersController Get #show" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="UserSerializer" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="--no-color" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -295,7 +343,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method v="2" />
     </configuration>
-    <configuration name="OrdersController: pizza-api-app" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration name="null: pizza-api-app" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <module name="pizza-api-app" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -315,44 +363,10 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/controllers/orders_controller_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/serializers/topping_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="'**/*_spec.rb'" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="OrdersController" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="--no-color" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method v="2" />
-    </configuration>
-    <configuration name="PizzasController GET #show returns pizza information: pizza-api-app" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <module name="pizza-api-app" />
-      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/controllers/pizzas_controller_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="'**/*_spec.rb'" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="PizzasController GET #show returns pizza information" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="null" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="--no-color" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -460,11 +474,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="RSpec.OrdersController: pizza-api-app" />
+        <item itemvalue="RSpec.OrderSerializer is json: pizza-api-app" />
+        <item itemvalue="RSpec.OrderSerializer: pizza-api-app" />
         <item itemvalue="RSpec.OrdersController Get #show returns user's order: pizza-api-app" />
-        <item itemvalue="RSpec.OrdersController Get #show: pizza-api-app" />
-        <item itemvalue="RSpec.OrdersController GET #index returns user's orders: pizza-api-app" />
-        <item itemvalue="RSpec.PizzasController GET #show returns pizza information: pizza-api-app" />
+        <item itemvalue="RSpec.UserSerializer: pizza-api-app" />
+        <item itemvalue="RSpec.null: pizza-api-app" />
       </list>
     </recent_temporary>
   </component>
@@ -481,44 +495,44 @@
       <updated>1554736811418</updated>
       <workItem from="1554736814459" duration="1575000" />
       <workItem from="1554741464128" duration="526000" />
-      <workItem from="1554742614217" duration="2262000" />
+      <workItem from="1554742614217" duration="3437000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="OrdersController_Get_#show_returns_user's_order__pizza-api-app - 2019.04.08 at 13h 25m 51s.xml">
+    <history-entry file="OrderSerializer_is_json__pizza-api-app - 2019.04.08 at 13h 51m 23s.xml">
+      <configuration name="OrderSerializer is json: pizza-api-app" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="OrdersController_Get_#show_returns_user's_order__pizza-api-app - 2019.04.08 at 13h 52m 16s.xml">
       <configuration name="OrdersController Get #show returns user's order: pizza-api-app" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="OrdersController_Get_#show_returns_user's_order__pizza-api-app - 2019.04.08 at 13h 26m 22s.xml">
-      <configuration name="OrdersController Get #show returns user's order: pizza-api-app" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="OrderSerializer__pizza-api-app - 2019.04.08 at 13h 53m 11s.xml">
+      <configuration name="OrderSerializer: pizza-api-app" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="OrdersController_Get_#show_returns_user's_order__pizza-api-app - 2019.04.08 at 13h 26m 32s.xml">
-      <configuration name="OrdersController Get #show returns user's order: pizza-api-app" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="OrderSerializer_is_json__pizza-api-app - 2019.04.08 at 13h 54m 29s.xml">
+      <configuration name="OrderSerializer is json: pizza-api-app" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="OrdersController_Get_#show_returns_user's_order__pizza-api-app - 2019.04.08 at 13h 28m 21s.xml">
-      <configuration name="OrdersController Get #show returns user's order: pizza-api-app" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="OrderSerializer__pizza-api-app - 2019.04.08 at 13h 54m 52s.xml">
+      <configuration name="OrderSerializer: pizza-api-app" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="OrdersController_Get_#show__pizza-api-app - 2019.04.08 at 13h 30m 27s.xml">
-      <configuration name="OrdersController Get #show: pizza-api-app" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="OrderSerializer_is_json__pizza-api-app - 2019.04.08 at 13h 55m 04s.xml">
+      <configuration name="OrderSerializer is json: pizza-api-app" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="OrdersController_Get_#show_returns_user's_order__pizza-api-app - 2019.04.08 at 13h 31m 49s.xml">
-      <configuration name="OrdersController Get #show returns user's order: pizza-api-app" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="OrderSerializer_is_json__pizza-api-app - 2019.04.08 at 13h 55m 19s.xml">
+      <configuration name="OrderSerializer is json: pizza-api-app" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="OrdersController_Get_#show__pizza-api-app - 2019.04.08 at 13h 32m 16s.xml">
-      <configuration name="OrdersController Get #show: pizza-api-app" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="OrderSerializer_is_json__pizza-api-app - 2019.04.08 at 13h 55m 50s.xml">
+      <configuration name="OrderSerializer is json: pizza-api-app" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="OrdersController_Get_#show_returns_user's_order__pizza-api-app - 2019.04.08 at 13h 32m 29s.xml">
-      <configuration name="OrdersController Get #show returns user's order: pizza-api-app" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="OrderSerializer__pizza-api-app - 2019.04.08 at 13h 56m 22s.xml">
+      <configuration name="OrderSerializer: pizza-api-app" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="OrdersController_Get_#show_returns_user's_order__pizza-api-app - 2019.04.08 at 13h 32m 41s.xml">
-      <configuration name="OrdersController Get #show returns user's order: pizza-api-app" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="OrdersController_Get_#show_returns_user's_order__pizza-api-app - 2019.04.08 at 13h 33m 22s.xml">
-      <configuration name="OrdersController Get #show returns user's order: pizza-api-app" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="OrderSerializer_is_json__pizza-api-app - 2019.04.08 at 13h 57m 18s.xml">
+      <configuration name="OrderSerializer is json: pizza-api-app" configurationId="RSpecRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4363000" />
+    <option name="totallyTimeSpent" value="5538000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="23" width="1280" height="1417" extended-state="0" />
@@ -550,17 +564,24 @@
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pizza_api_app@UsersController_GET__index__pizza_api_app.rcov" NAME="UsersController GET #index: pizza-api-app Coverage Results" MODIFIED="1554743503193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pizza-api-app" />
-    <SUITE FILE_PATH="coverage/pizza_api_app@PizzasController_GET__index_returns_5_pizzas__pizza_api_app.rcov" NAME="PizzasController GET #index returns 5 pizzas: pizza-api-app Coverage Results" MODIFIED="1554742790817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pizza-api-app" />
-    <SUITE FILE_PATH="coverage/pizza_api_app@PizzasController_GET__index__pizza_api_app.rcov" NAME="PizzasController GET #index: pizza-api-app Coverage Results" MODIFIED="1554742768485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pizza-api-app" />
+    <SUITE FILE_PATH="coverage/pizza_api_app@PizzaSerializer_is_json__pizza_api_app.rcov" NAME="PizzaSerializer is json: pizza-api-app Coverage Results" MODIFIED="1554745561155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pizza-api-app" />
     <SUITE FILE_PATH="coverage/pizza_api_app@UsersController_GET__index_returns_users__pizza_api_app.rcov" NAME="UsersController GET #index returns users: pizza-api-app Coverage Results" MODIFIED="1554743489556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pizza-api-app" />
     <SUITE FILE_PATH="coverage/pizza_api_app@PizzasController_GET__show__pizza_api_app.rcov" NAME="PizzasController GET #show: pizza-api-app Coverage Results" MODIFIED="1554743098995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pizza-api-app" />
-    <SUITE FILE_PATH="coverage/pizza_api_app@OrdersController_Get__show_returns_user_s_order__pizza_api_app.rcov" NAME="OrdersController Get #show returns user's order: pizza-api-app Coverage Results" MODIFIED="1554744798587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pizza-api-app" />
+    <SUITE FILE_PATH="coverage/pizza_api_app@OrdersController_Get__show_returns_user_s_order__pizza_api_app.rcov" NAME="OrdersController Get #show returns user's order: pizza-api-app Coverage Results" MODIFIED="1554745934572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pizza-api-app" />
     <SUITE FILE_PATH="coverage/pizza_api_app@PizzasController_GET__show_returns_pizza_information__pizza_api_app.rcov" NAME="PizzasController GET #show returns pizza information: pizza-api-app Coverage Results" MODIFIED="1554743776152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pizza-api-app" />
-    <SUITE FILE_PATH="coverage/pizza_api_app@ToppingsController_GET__index_returns_toppings__pizza_api_app.rcov" NAME="ToppingsController GET #index returns toppings: pizza-api-app Coverage Results" MODIFIED="1554743538953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pizza-api-app" />
     <SUITE FILE_PATH="coverage/pizza_api_app@OrdersController_GET__index_returns_user_s_orders__pizza_api_app.rcov" NAME="OrdersController GET #index returns user's orders: pizza-api-app Coverage Results" MODIFIED="1554744143269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pizza-api-app" />
-    <SUITE FILE_PATH="coverage/pizza_api_app@OrdersController_Get__show__pizza_api_app.rcov" NAME="OrdersController Get #show: pizza-api-app Coverage Results" MODIFIED="1554744734440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pizza-api-app" />
     <SUITE FILE_PATH="coverage/pizza_api_app@OrdersController__pizza_api_app.rcov" NAME="OrdersController: pizza-api-app Coverage Results" MODIFIED="1554744906562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pizza-api-app" />
+    <SUITE FILE_PATH="coverage/pizza_api_app@OrderSerializer_is_json__pizza_api_app.rcov" NAME="OrderSerializer is json: pizza-api-app Coverage Results" MODIFIED="1554746236401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pizza-api-app" />
+    <SUITE FILE_PATH="coverage/pizza_api_app@UsersController_GET__index__pizza_api_app.rcov" NAME="UsersController GET #index: pizza-api-app Coverage Results" MODIFIED="1554743503193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pizza-api-app" />
+    <SUITE FILE_PATH="coverage/pizza_api_app@null__pizza_api_app.rcov" NAME="null: pizza-api-app Coverage Results" MODIFIED="1554745729486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pizza-api-app" />
+    <SUITE FILE_PATH="coverage/pizza_api_app@PizzasController_GET__index_returns_5_pizzas__pizza_api_app.rcov" NAME="PizzasController GET #index returns 5 pizzas: pizza-api-app Coverage Results" MODIFIED="1554742790817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pizza-api-app" />
+    <SUITE FILE_PATH="coverage/pizza_api_app@PizzasController_GET__index__pizza_api_app.rcov" NAME="PizzasController GET #index: pizza-api-app Coverage Results" MODIFIED="1554742768485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pizza-api-app" />
+    <SUITE FILE_PATH="coverage/pizza_api_app@UserSerializer__pizza_api_app.rcov" NAME="UserSerializer: pizza-api-app Coverage Results" MODIFIED="1554745756864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pizza-api-app" />
+    <SUITE FILE_PATH="coverage/pizza_api_app@ToppingSerializer_is_json__pizza_api_app.rcov" NAME="ToppingSerializer is json: pizza-api-app Coverage Results" MODIFIED="1554745639247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pizza-api-app" />
+    <SUITE FILE_PATH="coverage/pizza_api_app@ToppingsController_GET__index_returns_toppings__pizza_api_app.rcov" NAME="ToppingsController GET #index returns toppings: pizza-api-app Coverage Results" MODIFIED="1554743538953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pizza-api-app" />
+    <SUITE FILE_PATH="coverage/pizza_api_app@OrdersController_Get__show__pizza_api_app.rcov" NAME="OrdersController Get #show: pizza-api-app Coverage Results" MODIFIED="1554744734440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pizza-api-app" />
+    <SUITE FILE_PATH="coverage/pizza_api_app@null_is_json__pizza_api_app.rcov" NAME="null is json: pizza-api-app Coverage Results" MODIFIED="1554745717605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pizza-api-app" />
+    <SUITE FILE_PATH="coverage/pizza_api_app@OrderSerializer__pizza_api_app.rcov" NAME="OrderSerializer: pizza-api-app Coverage Results" MODIFIED="1554746179026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="pizza-api-app" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -622,20 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/factories/pizzas.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/controllers/toppings_controller_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/users_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -657,17 +664,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/orders_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/factories/order.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/serializers/pizza_serializer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/serializers/pizza_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="38" lean-forward="true" selection-end-line="15" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/serializers/topping_serializer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/controllers/toppings_controller_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/controllers/orders_controller_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="23" column="53" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/factories/pizzas.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/orders_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -685,10 +734,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/controllers/orders_controller_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/serializers/user_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+        <state>
+          <caret selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/serializers/topping_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/serializers/order_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>

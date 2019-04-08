@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 class PizzasController < ApplicationController
   before_action :authorize_request
-  before_action :set_pizza, only: [:show, :update, :destroy]
+  before_action :set_pizza, only: %i[show update destroy]
 
   def index
     @pizzas = Pizza.all
@@ -25,7 +27,7 @@ class PizzasController < ApplicationController
     if @pizza.update(pizza_params)
       render json: @pizza, status: :ok
     else
-      render json: @pizza.errors,status: :unprocessable_entity
+      render json: @pizza.errors, status: :unprocessable_entity
     end
   end
 

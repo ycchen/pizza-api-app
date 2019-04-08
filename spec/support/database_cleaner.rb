@@ -1,5 +1,6 @@
-RSpec.configure do |config|
+# frozen_string_literal: true
 
+RSpec.configure do |config|
   config.before(:suite) do
     DatabaseCleaner.clean_with(:deletion)
   end
@@ -31,7 +32,6 @@ RSpec.configure do |config|
   end
 
   config.after(:all, :cleaner_for_context) do
-    DatabaseCleaner.clean  
+    DatabaseCleaner.clean
   end
-
 end

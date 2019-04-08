@@ -1,17 +1,18 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe OrdersController, type: :controller do
-
   before(:each) do
     @user = FactoryBot.create(:user)
     authenticated_header(request, @user)
   end
 
-  describe "GET #index" do
+  describe 'GET #index' do
     it "returns user's orders" do
-      5.times {
+      5.times do
         FactoryBot.create(:order, user: @user)
-      }
+      end
 
       get :index
 
@@ -19,15 +20,14 @@ RSpec.describe OrdersController, type: :controller do
     end
   end
 
-  describe "Get #show" do
+  describe 'Get #show' do
     it "returns user's order" do
-      order =  FactoryBot.create(:order, user: @user)
+      order = FactoryBot.create(:order, user: @user)
 
-      get :show, params: {id: order.id}
+      get :show, params: { id: order.id }
 
-      # puts json_response.inspect
+      puts json_response.inspect
       expect(response).to have_http_status(:success)
     end
-
   end
 end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe UsersController, type: :controller do
@@ -6,11 +8,11 @@ RSpec.describe UsersController, type: :controller do
     authenticated_header(request, @user)
   end
 
-  describe "GET #index" do
-    it "returns users" do
-      5.times {
+  describe 'GET #index' do
+    it 'returns users' do
+      5.times do
         FactoryBot.create(:user)
-      }
+      end
 
       get :index
 

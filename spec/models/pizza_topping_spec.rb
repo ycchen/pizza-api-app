@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe PizzaTopping, type: :model do
@@ -6,7 +8,7 @@ RSpec.describe PizzaTopping, type: :model do
 
   it { should respond_to(:topping_id) }
   it { should respond_to(:pizza_id) }
-  
+
   it { should belong_to(:topping) }
   it { should belong_to(:pizza) }
 end

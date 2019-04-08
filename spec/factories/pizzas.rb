@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 FactoryBot.define do
   factory :pizza do
     name { FFaker::Lorem.unique.word }

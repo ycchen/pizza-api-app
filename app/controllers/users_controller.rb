@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class UsersController < ApplicationController
-  before_action :authorize_request, except: [:create, :index]
+  before_action :authorize_request, except: %i[create index]
   before_action :set_user, except: %i[create index]
 
   # GET /users
@@ -41,8 +43,8 @@ class UsersController < ApplicationController
 
   def set_user
     @user = User.find_by_username!(params[:_username])
-    rescue ActiveRecord::RecordNotFound
-      render json: { errors: 'User not found' }, status: :not_found
+  rescue ActiveRecord::RecordNotFound
+    render json: { errors: 'User not found' }, status: :not_found
   end
 
   def user_params

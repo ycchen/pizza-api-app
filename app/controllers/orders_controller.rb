@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class OrdersController < ApplicationController
   before_action :authorize_request
   before_action :set_order, except: %i[create index]
@@ -14,7 +16,7 @@ class OrdersController < ApplicationController
   def create
     @order = @current_user.orders.build
     @order.build_pizza_order_with_pizza_ids_and_quantities(params[:order][:pizza_ids_and_quantities])
-    
+
     if @order.save
       render json: @order, status: 201
     else
@@ -30,6 +32,7 @@ class OrdersController < ApplicationController
 
   def order_params
     params.require(:order).permit(
-      :pizza_ids_and_quantities => [])
+      pizza_ids_and_quantities: []
+    )
   end
 end
