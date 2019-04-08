@@ -12,8 +12,11 @@
 
 ActiveRecord::Schema.define(version: 2019_04_06_124752) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "orders", force: :cascade do |t|
-    t.integer "user_id"
+    t.bigint "user_id"
     t.decimal "total", precision: 5, scale: 2
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -21,8 +24,8 @@ ActiveRecord::Schema.define(version: 2019_04_06_124752) do
   end
 
   create_table "pizza_orders", force: :cascade do |t|
-    t.integer "order_id"
-    t.integer "pizza_id"
+    t.bigint "order_id"
+    t.bigint "pizza_id"
     t.integer "quantity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -31,8 +34,8 @@ ActiveRecord::Schema.define(version: 2019_04_06_124752) do
   end
 
   create_table "pizza_toppings", force: :cascade do |t|
-    t.integer "topping_id"
-    t.integer "pizza_id"
+    t.bigint "topping_id"
+    t.bigint "pizza_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["pizza_id"], name: "index_pizza_toppings_on_pizza_id"
@@ -61,4 +64,9 @@ ActiveRecord::Schema.define(version: 2019_04_06_124752) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "orders", "users"
+  add_foreign_key "pizza_orders", "orders"
+  add_foreign_key "pizza_orders", "pizzas"
+  add_foreign_key "pizza_toppings", "pizzas"
+  add_foreign_key "pizza_toppings", "toppings"
 end

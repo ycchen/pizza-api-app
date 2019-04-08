@@ -12,15 +12,16 @@ RSpec.describe "Order", :type => :request do
 
     context '#create' do
       it "creates an order" do
-        5.times {
-          FactoryBot.create(:pizza, name: FFaker::Lorem.unique.word)
-        }
+        p_one = FactoryBot.create(:pizza, name: FFaker::Lorem.unique.word, price: 10.50)
+        p_two = FactoryBot.create(:pizza, name: FFaker::Lorem.unique.word, price: 10.50)
+        p_three = FactoryBot.create(:pizza, name: FFaker::Lorem.unique.word, price: 10.50)
+        
 
         order_params = {
             "pizza_ids_and_quantities": [
-              [1, 1],
-              [2, 2],
-              [3, 1]
+              [p_one.id, 1],
+              [p_two.id, 2],
+              [p_three.id, 1]
             ]
         }
         
@@ -34,8 +35,8 @@ RSpec.describe "Order", :type => :request do
 
     context '#index' do
       before(:each) do
-          pizza_one = FactoryBot.create(:pizza, price: 10)
-          pizza_two = FactoryBot.create(:pizza, price: 15)
+          pizza_one = FactoryBot.create(:pizza, price: 10.00)
+          pizza_two = FactoryBot.create(:pizza, price: 15.00)
     
           pizza_order_one = FactoryBot.build(:pizza_order, pizza: pizza_one, quantity: 2)
           pizza_order_two = FactoryBot.build(:pizza_order, pizza: pizza_two, quantity: 2)
