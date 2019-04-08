@@ -152,4 +152,16 @@ rails g controller Pizzas
 rails g controller Toppings
 
 rails g controller Orders
+
+# generate serializer
+
+rails g serializer pizza
+
+rails g serializer topping
+
+rails g serializer order
+
+rails g serializer user
+
+
 ```

@@ -47,6 +47,7 @@ end
 gem 'bcrypt', '~>3.1.12'
 gem 'jwt'
 gem 'ffaker'
+gem 'active_model_serializers'
 
 group :test do
   gem 'shoulda-matchers'
