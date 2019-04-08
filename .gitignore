@@ -17,6 +17,9 @@
 !/log/.keep
 !/tmp/.keep
 
+# Ignore the Rubymine config folder
+.idea/**/*
+
 # Ignore uploaded files in development
 /storage/*
 !/storage/.keep
