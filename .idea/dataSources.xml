@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Rails pizza-api-app: test" uuid="3858291f-75b6-43a1-8b8c-3ebd549b3454">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/pizza_api_test</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails pizza-api-app: development" uuid="9d9fb54d-eeff-4c92-b8ab-d65e4f448c4f">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/pizza_api_development</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails pizza-api-app: production" uuid="f97b2261-50f4-47b4-aae5-6cb8b7a427d0">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/pizza_api_production</jdbc-url>
+    </data-source>
+  </component>
+</project>

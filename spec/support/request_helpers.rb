@@ -10,6 +10,12 @@ module Request
     #   request.headers['Accept'] = "application/vnd.marketplace.v#{version}" 
     # end
 
+
+    def authenticated_header(request, user)
+      token = JsonWebToken.encode(user_id: user.id)
+      request.headers.merge!('Authorization': "#{token}")
+    end
+
     # def api_response_format(format = Mime::JSON)
     #   request.headers['Accept'] = "#{request.headers['Accept']},#{format}" 
     #   request.headers['Content-Type'] = format.to_s

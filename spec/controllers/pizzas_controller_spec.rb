@@ -2,22 +2,30 @@ require 'rails_helper'
 
 RSpec.describe PizzasController, type: :controller do
 
-  # describe "GET #index" do
-  #   before(:each) do
-  #     @user = FactoryBot.create(:user)
-  #     params = { email: @user.email, password: @user.password }
-  #     post '/auth/login',params: params, headers: headers, as: :json
-  #     @token = json_response[:token]
-  #     @headers = {'Authorization': @token }
-  #   end
+  before(:each) do
+    @user = FactoryBot.create(:user)
+    authenticated_header(request, @user)
+  end
 
-  #   it "returns 5 pizzas" do
-  #     5.times { 
-  #       FactoryBot.create(:pizza) 
-  #     }
-  #     get :index
+  describe "GET #index" do
+    it "returns 5 pizzas" do
+      5.times {
+        FactoryBot.create(:pizza)
+      }
 
-  #     puts response.body
-  #   end
-  # end
+      get :index
+
+      expect(json_response.size).to eq(5)
+    end
+  end
+
+  describe "GET #show" do
+    it "returns pizza information" do
+      pizza = FactoryBot.create(:pizza, name: 'Big pizza')
+
+      get :show, params: {id: pizza.id}
+
+      expect(json_response[:name]).to eq('Big pizza')
+    end
+  end
 end
