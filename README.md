@@ -4,9 +4,17 @@
 
 -- Setup 
 ```
-rails db:{drop,create,migrate,seed,test:prepare}
+# create database, migration, seed data and prepare for test
+
+rails db:{create,migrate,seed,test:prepare}
+
+# Start server
 
 rails s
+
+# Start test
+
+rspec .
 
 ```
 
@@ -78,12 +86,7 @@ curl -H "Authorization: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1NTQ2MDU
   
 ```
 
-
-
-
-
-
-* Models
+** Models
 
 ```ruby
 # Pizza model
