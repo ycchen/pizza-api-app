@@ -18,6 +18,26 @@ rspec .
 
 ```
 
+-- CI/CD with Heroku
+
+```ruby
+# For testing purpose, you can list users on Heroku
+  
+  https://desolate-harbor-15422.herokuapp.com/
+
+  https://desolate-harbor-15422.herokuapp.com/user
+  
+  [
+    {
+      "id": 1,
+      "name": "admin",
+      "username": "admin",
+      "email": "admin@test.com"
+    }
+  ]
+  
+```
+
 ** curl test example
 
 ```ruby
